@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+section .imgBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+ section .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.contentBx{
+    display: flex;
+    justify-items: right;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    font-family: 'Irish Grover';
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+section .contentBx .formBx{
+    width: 50%;
+}
+section .contentBx .formBx h{
+    /* position: absolute; */
+    width: 477px;
+    height: 123px;
+    top: 90px;
+    left: 760px;
+    color: #434109;
+    font-size: 45px;
+    line-height: 54px; 
+}
+section .contentBx .formBx .inputBx{
+    margin-bottom: 20px;
+}
+
+section .contentBx .formBx span{
+    position: absolute;
+    width: 172px;
+    height: 54px;
+    left: 790px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #7D8015;
+}
+
+section .contentBx .formBx input{
+    position: absolute;
+    width: 400px;
+    height: 40px;
+    left:810px;
+
+    background: #D9D9D9;
+    border-radius: 5px;
+}
+
+section .contentBx .formBx .inputBx .log {
+    position: absolute;
+    width: 141px;
+    height: 47px;
+    left: 945px;
+
+    background: #BDCA24;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font-family: 'Irish Grover';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+} 
+ 
+section .contentBx .formBx .inputBx p{
+
+    position: absolute;
+    width: 315px;
+    height: 40px;
+    left: 960px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #68696F;
+}
+
+section .contentBx .formBx .inputBx .line{
+    border-bottom: 1px solid #000000;
+    left: 780px;
+    width: 500px;
+}
+
+section .contentBx .formBx .inputBx .create_acc{
+
+    position: absolute;
+    width: 274px;
+    height: 47px;
+    left: 880px;
+
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font-family: 'Irish Grover';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+
+    background: #F7FF9C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} 
+
+#username_error{
+    position: absolute;
+    width: 400px;
+    left: 810px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: red;
+    display: none;
+}
+
+#password_error{
+    position: absolute;
+    width: 400px;
+    left: 810px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: red;
+    display: none;
+}
+
+#email_error{
+    position: absolute;
+    width: 400px;
+    left: 810px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: red;
+    display: none;
+}
+
+#phoneNum_error{
+    position: absolute;
+    width: 400px;
+    left: 810px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: red;
+    display: none;
+}
+
+/* ========================================= */
+/* home page */
+#header{
+    background-color: rgba(235, 236, 175, 0.97);
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    margin: 0%;
+}
+
+.title_bog{
+    position: absolute;
+    width: 95px;
+    height: 63px;
+    left: 20px;
+    top: 20px;
+
+    font-family: 'Irish Grover';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 35px;
+
+    color: #434109;
+}
+
+#box-search{
+    position: absolute;
+    left: 250px;
+    top: 30px;
+    width: 800px;
+    /* width: 1190px; */
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#box-search i{
+    font-size: 20px;
+    color: #000000;
+}
+
+#box-search input{
+    font-size: 18px;
+    height: 37px;
+    border: none;
+    outline: none;
+    flex: 1;
+    padding-left: 10px;
+}
+
+#myNav {
+    position: fixed;
+    background-color: #D9D9D9;
+    width: 100%;
+    top: 100px;
+    height: 47px;
+    padding: 10px;
+}
+
+#myNav i{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#myNav a{
+    display: inline-block;
+    width: 118px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+
+}
+
+/* content */
+#list-container{
+    position: absolute;
+    padding: 0 25px;
+    top: 170px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+.hot-list{
+    display: flex;
+    padding-bottom: 50px;
+    align-items: center;
+    transform: translateX(0);
+}
+
+
+.hot-list-item-img{
+    margin-right: 25px; 
+    transition: all 1s ease-in-out;
+    width: 148px;
+    height: 120px;
+}
+
+.hot-list-item:hover .hot-list-item-img{
+    transform: scale(1.3);
+}
+
+.bg-img{
+    background-color: #D9D9D9;
+    width: 148px;
+    height: 160px;
+    margin-right: 30px;
+}
+
+.des{
+    padding-left: 20px;
+}
+
+.hot-list-wrapper{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.arrow{
+    font-size: 40px;
+    position: absolute;
+    right: 500px;
+
+}
+
+.arrow-left{
+    font-size: 40px;
+    position: absolute;
+    left: 500px;
+
+}
+.cir{
+    font-size: 50px;
+    position: absolute;
+    right: 20px;
+}
+
+/* footer */
+#footer {
+    background-color: rgba(235, 236, 175, 0.97);
+    width: 100%;
+    height: 100px;
+    padding: 0px;
+    margin: 0%;
+    /* display: inline-block; */
+    font-family: 'Irish Grover';
+    font-style: normal;
+    color: #434109;
+    margin-top: 100px;
+
+}
+
+#footer .footer-title{
+    position: absolute;
+    width: 95px;
+    height: 63px;
+    left: 20px;
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 35px;
+}
+
+.fa-facebook-f:before{
+    position: absolute;
+    padding-top: 15px;
+    right: 430px;
+    color: #000000;
+    font-size: 47px;
+}
+
+.fa-envelope::before{
+    position: absolute;
+    right: 300px;
+    padding-top: 20px;
+    color: #000000;
+    font-size: 47px;
+}
+.fa-phone:before{
+    position: absolute;
+    padding-top: 15px;
+    right: 170px;
+    color: #000000;
+    font-size: 47px;
+}
+
+/* DORAEMON PAGE */
+
+#main-content{
+    padding: 25px;
+    /* display: flex; */
+    font-family: 'Inter';
+    font-style: normal;
+    color: #000000;
+}
+.dore-img{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 200px;
+}
+
+#main-content h1{
+    position: absolute;
+    width: 191px;
+    height: 59px;
+    right: 500px;
+    top: 165px;
+    font-weight: 750;
+    font-size: 36px;
+    line-height: 44px;
+}
+.info-1{
+    display: flex;
+    position: absolute;
+    right: 800px;
+    top: 233px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+.info-2{
+    display: flex;
+    position: absolute;
+    right: 800px;
+    top: 300px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+.info-3{
+    display: flex;
+    position: absolute;
+    right: 800px;
+    top: 367px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+.like-action{
+    background-color:  #BDCA24;
+    width: 150px;
+    display: flex;
+    font-family: 'Irish Grover';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    padding: 5px;
+    position: absolute;
+    left: 540px;
+    top: 450px;
+    
+}
+.read-first{
+    width: 180px;
+    display: flex;
+    background-color:  #BDCA24;
+    font-family: 'Irish Grover';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    position: absolute;
+    left: 540px;
+    top: 550px;
+    padding: 5px;
+}
+.sub-content{
+    position: absolute;
+    top: 650px;
+}
+
+.select-chapter #chapters{
+    position: absolute;
+    border: none;
+    background-color:#D9D9D9;
+    width: 232px;
+    height: 30px;
+    left: 590px;
+    top: 169px;
+    font-family: 'Irish Grover';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+.insert-part p{
+    position: absolute;
+    width: 600px;
+    height: 563px;
+    left: 430px;
+    top: 237px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+ 
+
+
+
+
+
+
+
