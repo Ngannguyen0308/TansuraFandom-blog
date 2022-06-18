@@ -241,7 +241,7 @@ section .contentBx .formBx .inputBx .create_acc{
 }
 
 #myNav {
-    position: fixed;
+    position: absolute;
     background-color: #D9D9D9;
     width: 100%;
     top: 100px;
